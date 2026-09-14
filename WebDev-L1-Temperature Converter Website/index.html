@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+
+    <main class="container">
+
+        
+        <section class="hero">
+            <div class="temperature-icon">🌡️</div>
+
+            <p class="tag">SMART TEMPERATURE TOOL</p>
+
+            <h1>ONBIT</h1>
+
+            <p class="subtitle">
+                Convert temperatures instantly between Celsius,
+                Fahrenheit and Kelvin.
+            </p>
+        </section>
+
+
+        
+        <section class="converter-card">
+
+            <div class="input-section">
+
+                <label for="temperature">
+                    Enter Temperature
+                </label>
+
+                <div class="input-wrapper">
+                    <input
+                        type="number"
+                        id="temperature"
+                        placeholder="Enter a value"
+                        step="any"
+                    >
+
+                    <span class="degree-symbol">°</span>
+                </div>
+
+                <label for="unit">
+                    Select Input Unit
+                </label>
+
+                <select id="unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+
+                <p id="error-message" class="error-message"></p>
+
+                <button id="convert-btn">
+                    Convert Temperature
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+         
+            <div class="results-section">
+
+                <div class="results-heading">
+                    <div>
+                        <p class="small-title">CONVERSION RESULTS</p>
+                        <h2>Your Temperature</h2>
+                    </div>
+
+                    <div class="mini-icon">°</div>
+                </div>
+
+
+                <div class="result-grid">
+
+                    <div class="result-card">
+                        <div class="result-top">
+                            <span class="result-icon">℃</span>
+                            <span class="result-name">Celsius</span>
+                        </div>
+
+                        <div class="result-value">
+                            <span id="celsius-result">--</span>
+                            <small>°C</small>
+                        </div>
+                    </div>
+
+                    <div class="result-card">
+                        <div class="result-top">
+                            <span class="result-icon">℉</span>
+                            <span class="result-name">Fahrenheit</span>
+                        </div>
+
+                        <div class="result-value">
+                            <span id="fahrenheit-result">--</span>
+                            <small>°F</small>
+                        </div>
+                    </div>
+
+
+                    <div class="result-card">
+                        <div class="result-top">
+                            <span class="result-icon">K</span>
+                            <span class="result-name">Kelvin</span>
+                        </div>
+
+                        <div class="result-value">
+                            <span id="kelvin-result">--</span>
+                            <small>K</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+     
+        <footer>
+       
+            <p>© 2026 Onbit</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
